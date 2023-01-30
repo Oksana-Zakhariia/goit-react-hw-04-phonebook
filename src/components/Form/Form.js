@@ -13,7 +13,8 @@ const initialValues = {
   id: nanoid(5),
   number: '',
 };
-export const ContactFormOld = ({ onSubmit }) => {
+
+export const ContactForm = ({ onSubmit }) => {
   const handleSubmit = (values, { resetForm }) => {
     onSubmit(values);
     resetForm();
