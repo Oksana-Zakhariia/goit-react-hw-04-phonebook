@@ -50,7 +50,7 @@ export function App() {
       })
     );
   };
-  const normalizedFilterValue = filter.toLocaleLowerCase();
+  const normalizedFilterValue = filter.toLowerCase();
   const filtredContacts = contacts.filter(contact => {
     return contact.name.toLowerCase().includes(normalizedFilterValue);
   });
